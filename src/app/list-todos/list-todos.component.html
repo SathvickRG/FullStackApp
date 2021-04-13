@@ -1,0 +1,21 @@
+<table border="">
+    <caption>My Todo's</caption>
+    <thead>
+     <tr>
+         <th>Description</th>
+         <th>Target Date</th>
+         <th>Status</th>
+     </tr>
+    </thead>
+    <tbody>
+        <!-- for(Todo todo: todos) java code { -->
+   <!-- variable todo of type todos -->    
+        <tr *ngFor= "let todo of todos">  
+            <td>{{todo.description}}</td>
+            <td>{{todo.targetDate | date}}</td>
+            <td>{{todo.done}}</td>
+        </tr>
+<!-- } -->
+    </tbody>
+
+</table>
