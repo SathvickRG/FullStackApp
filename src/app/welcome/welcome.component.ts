@@ -11,7 +11,7 @@ export class WelcomeComponent implements OnInit {
    name = ''
   welcomeMessage = 'WELCOME WORKS' //js
   // message2 : string = 'welcome TS '  //ts
-  //ActivatedRoute - which route is currently active //dependencyinjec
+  //ActivatedRoute - which route is currently active //dependencyinjection
   constructor(private route:ActivatedRoute) 
   {
 

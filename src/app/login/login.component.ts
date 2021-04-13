@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     // invalid credential check
     if(this.username === "sathvick" && this.password === 'dummy')
     {
-      this.router.navigate(['welcome', this.username]) //route to specific page
+      this.router.navigate(['Welcome', this.username]) //route to specific page
      
       this.invalidLogin = false }
     else {
