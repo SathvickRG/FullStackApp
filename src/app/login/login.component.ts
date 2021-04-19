@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   //Router
   //Dependency Injection
   constructor(private router: Router,
-  private HardcodedAuthenticationService: HardcodedAuthenticationService) 
+  private hardcodedAuthenticationService: HardcodedAuthenticationService) 
   { }
   
 
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
         // invalid credential check
   // if(this.username==="sathvick" && this.password==="dummy")
 
-  if(this.HardcodedAuthenticationService.authenticate(this.username,this.password))
+  if(this.hardcodedAuthenticationService.authenticate(this.username,this.password))
     {
       //redirect to welcome page
       this.router.navigate(['welcome', this.username]) //route to specific page
