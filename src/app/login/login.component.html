@@ -1,7 +1,10 @@
 <!-- User Name : <input type= "text" name = "username" value="{{username}}"> -->
 <!-- Password : <input type="password" name = "password"value="{{password}}"> -->
 
-<small *ngIf = 'invalidLogin'>{{errorMessage}}</small>
+<h1>Login</h1>
+<div class="container">
+
+<div class="alert alert-warning" *ngIf = 'invalidLogin'>{{errorMessage}}</div>
 <div>
     User Name : <input type="text" class="form-control" 
     name="username" required
@@ -11,10 +14,10 @@
     name="password" required
     [(ngModel)]="password" name="password"> 
 
-    <button (click)=handleLogin()>Login</button>
+    <button (click)=handleLogin() class="btn btn-success">Login</button>
 </div>
 
-
+</div>
 
 
 
